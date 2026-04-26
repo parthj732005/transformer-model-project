@@ -67,7 +67,7 @@ Instead of scaling parameters, we improved training through:
 
 ### Output
 - `best_model.pt`
-
+- `final_checkpoint.pt`
 ---
 
 # Phase 3: BookCorpus Refinement
