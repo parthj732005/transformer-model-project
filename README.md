@@ -2,8 +2,6 @@
 
 ## Individual Contributions
 
-## Individual Contributions
-
 | Team Member | Roll Number | Contribution |
 |------------|-------------|--------------|
 | **P. Sarat** | BT2024179 | Developed the complete **Wikitext-103 training pipeline**, including preprocessing, tokenization, baseline training, and model performance analysis. |
