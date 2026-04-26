@@ -99,7 +99,7 @@ Phase 1 → standalone Wikitext model
 
 Phase 2 → new training run using Wikitext + BookCorpus  
 
-Phase 3 → resumes from Phase 2 checkpoint for final refinement  
+Phase 3 → new training run using Wikitext + BookCorpus  
 
 ---
 
