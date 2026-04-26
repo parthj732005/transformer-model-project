@@ -1,4 +1,4 @@
-# Data-Centric Curriculum Training of a GPT Language Model for Coherent Prompt Generation
+# Data-Centric Curriculum Training of a GPT Language Model for Coherent Text Generation
 
 ## Individual Contributions
 
