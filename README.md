@@ -28,7 +28,10 @@ Instead of scaling parameters, we improved training through:
 ## Phase 1: Wikitext-103 Training
 
 ### Dataset
-:contentReference[oaicite:0]{index=0}
+- **WikiText-103**
+- Contains high-quality Wikipedia articles
+- Used as the baseline dataset for initial GPT training
+- Helps the model learn structured language patterns before scaling to larger corpora
 
 ### Pipeline
 - merged train/validation/test splits
@@ -48,8 +51,8 @@ Instead of scaling parameters, we improved training through:
 # Phase 2: Combined Corpus Training
 
 ### Datasets
-- :contentReference[oaicite:1]{index=1}
-- :contentReference[oaicite:2]{index=2} (`all_books_300M.txt`)
+- **WikiText-103** – used for baseline training in Phase 1.
+- **BookCorpus Dataset (`all_books_300M`)**
 
 ### Pipeline
 - re-encoded Wikitext from raw source
@@ -70,7 +73,9 @@ Instead of scaling parameters, we improved training through:
 # Phase 3: BookCorpus Refinement
 
 ### Dataset Source
-:contentReference[oaicite:3]{index=3} streaming API
+### Datasets
+- **WikiText-103** – used for baseline training in Phase 1.
+- **BookCorpus Dataset (`all_books_300M`)**
 
 ### Pipeline
 - streamed BookCorpus samples
@@ -119,12 +124,24 @@ Best validation losses:
 
 ```bash
 .
-├── Wikitext-103.ipynb
-├── GPT_Training_Fixed.ipynb
-├── Resume_Training.ipynb
-├── bookcorpus_extractionv2.ipynb
-├── best_model.pt
-├── final_checkpoint.pt
+Notebooks/
+├── Analysis/
+│   └── Analysis.ipynb
+│
+├── Datasets/
+│   └── Drive_links.md
+│
+├── Models/
+│   └── Google_drive_links.md
+│
+├── Training/
+│   ├── BookCorpusPreprocessingV1.ipynb
+│   ├── BookCorpusV1.ipynb
+│   ├── BookCorpusV1_Resumed.ipynb
+│   ├── BookCorpusv2Training.ipynb
+│   ├── Wikitext-103.ipynb
+│   └── bookcorpus_extractionv2.ipynb
+│
 └── README.md
 ```
 
